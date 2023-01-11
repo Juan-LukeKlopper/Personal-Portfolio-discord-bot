@@ -19,4 +19,9 @@ function notifyChannel(channel_ID: string, content: string) {
   channel.send(content)
 }
 
+function getBalance(api:string, balance_location: string,account: string) {
+  axios.get(`${api}${account}`)
+    .then(res => console.log(res.data[balance_location]))
+    .catch(err => console.log(err));
+}
 
