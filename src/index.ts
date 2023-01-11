@@ -25,3 +25,5 @@ function getBalance(api:string, balance_location: string,account: string) {
     .catch(err => console.log(err));
 }
 
+
+getBalance("https://api.creeper.banano.cc/banano/v1/account/overview/", "balance", process.env.BANANO_ADDRESS);
