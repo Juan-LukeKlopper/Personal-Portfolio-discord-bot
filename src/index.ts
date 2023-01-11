@@ -1,5 +1,6 @@
 require('dotenv').config();
 const { REST, Routes, Client, GatewayIntentBits } = require('discord.js');
+const axios = require('axios');
 
 const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
 
